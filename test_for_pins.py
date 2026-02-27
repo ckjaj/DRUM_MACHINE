@@ -8,9 +8,10 @@ pins = [19, 13, 6, 5, 10, 9, 25, 8,
 
 buttons = []
 
+#buttons index + 1 = the beat
+
 for i, pin in enumerate(pins):
 	but = Button(pin)
-	but.name = str(i+1)
 
 	but.when_pressed = lambda b: print(f"Button {b.name} was pressed")
 	but.when_released = lambda b: print(f"Button {b.name} was released")
