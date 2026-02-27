@@ -2,16 +2,22 @@ from gpiozero import Button
 from signal import pause
 
 # Define the button connected to GPIO 17
-button = Button(17)
 
-def button_pressed():
-    print("Button was pressed!")
+pins = [19, 13, 6, 5, 10, 9, 25, 8,
+		27, 22, 23, 24, 14, 15, 18, 17]
 
-def button_released():
-    print("Button was released!")
+buttons = []
 
-# Assign functions to events
-button.when_pressed = button_pressed
-button.when_released = button_released
+for i, pin in enumerate(pins):
+	but = Button(pin)
+	but.name = str(i+1)
+
+	but.when_pressed = lambda b: print(f"Button {b.name} was pressed")
+	but.when_released = lambda b: print(f"Button {b.name} was released")
+
+	buttons.append(but)
+
+
+
 
 pause() # Keeps the program running
