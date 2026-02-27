@@ -13,8 +13,8 @@ buttons = []
 for i, pin in enumerate(pins):
 	but = Button(pin)
 
-	but.when_pressed = lambda b: print(f"Button {b.name} was pressed")
-	but.when_released = lambda b: print(f"Button {b.name} was released")
+	but.when_pressed = lambda b: print(f"Button was pressed")
+	but.when_released = lambda b: print(f"Button was released")
 
 	buttons.append(but)
 
