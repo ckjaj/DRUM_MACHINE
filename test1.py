@@ -4,7 +4,7 @@ from gpiozero import LED
 import sys
 
 
-pins = [22, 27, 23, 24]
+pins = [23, 22, 24, 27]
 
 pins_led = [26, 16, 5, 6]
 
