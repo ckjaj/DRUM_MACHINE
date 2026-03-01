@@ -15,10 +15,10 @@ for i, pin in enumerate(pins):
 	def make_pressed(led_ref, n):
 		def pressed(b):
 			print(f"button {n} pressed")
-			if(led.value == 0):
-				led.value = 1
+			if(led_ref.value == 0):
+				led_ref.value = 1
 			else:
-				led.value = 0
+				led_ref.value = 0
 		return pressed
 
 	def make_released(led_ref, n):
