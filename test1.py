@@ -19,3 +19,4 @@ button4.when_pressed = lambda b: print(f"Button4 was pressed")
 button4.when_released = lambda b: print(f"Button4 was released")
 
 
+pause()
