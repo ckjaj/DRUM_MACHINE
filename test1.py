@@ -11,14 +11,7 @@ for i, pin in enumerate(pins):
 	but = Button(pin)
 	led = LED(pins_led[i])
 
-<<<<<<< HEAD
-=======
-	
 
-
-	led.blink()
-
->>>>>>> 31ada37 (toggle function)
 	def make_pressed(led_ref, n):
 		def pressed(b):
 			print(f"button {n} pressed")
