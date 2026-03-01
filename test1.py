@@ -3,14 +3,15 @@ from signal import pause
 from gpiozero import LED
 import sys
 
-
-pins = [23, 22, 24, 27]
+pins = [27, 24, 22, 23]
 
 pins_led = [26, 16, 5, 6]
 
 for i, pin in enumerate(pins):
 	but = Button(pin)
 	led = LED(pins_led[i])
+
+	led.blink()
 
 	def make_pressed(led_ref, n):
 		def pressed(b):
