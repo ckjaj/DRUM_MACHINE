@@ -10,6 +10,7 @@ for i, pin in enumerate(pins):
 	names[pin] = str(i+1)
 	but.when_pressed = lambda b: print(f"button {names[b.pin.number]} pressed")
 	but.when_released = lambda b: print(f"button {names[b.pin.number]} released")
+	print(f"button @ pin {pin} finished initialized")
 
 
 pause()
