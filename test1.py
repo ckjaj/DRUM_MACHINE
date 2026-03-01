@@ -1,8 +1,8 @@
 from gpiozero import Button
 from signal import pause
 
-button1 = Button(0)
-button2 = Button(1)
+button1 = Button(4)
+button2 = Button(5)
 button3 = Button(2)
 button4 = Button(3)
 
