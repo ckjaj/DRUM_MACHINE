@@ -5,7 +5,7 @@ import sys
 
 pins = [27, 24, 22, 23]
 
-pins_led = [26, 16, 5, 6]
+pins_led = [5, 6, 16, 26]
 
 for i, pin in enumerate(pins):
 	but = Button(pin)
