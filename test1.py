@@ -25,8 +25,8 @@ for i, pin in enumerate(pins):
 			led_ref.off()
 		return released
 
-	but.when_pressed = make_pressed(led_ref, str(i+1))
-	but.when_released = make_released(led_ref, str(i+1))
+	but.when_pressed = make_pressed(led, str(i+1))
+	but.when_released = make_released(led, str(i+1))
 	print(f"button @ pin {pin} finished initialized")
 
 
