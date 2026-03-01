@@ -13,13 +13,13 @@ for i, pin in enumerate(pins):
 	led = LED(pins_led[i])
 
 	def make_pressed(led_ref, n):
-		def pressed(n):
+		def pressed(b):
 			print(f"button {n} pressed")
 			led_ref.on()
 		return pressed
 
 	def make_released(led_ref, n):
-		def released(n):
+		def released(b):
 			print(f"button {n} released")
 			led_ref.off()
 		return released
