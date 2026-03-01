@@ -7,10 +7,10 @@ button3 = Button(2)
 button4 = Button(3)
 
 def but_pres():
-	print(f"Button1 was pressed")
+	print(f"Button was pressed")
 
 def but_rele():
-	print(f"Button1 was pressed")
+	print(f"Button was pressed")
 
 button1.when_pressed = but_pres
 button1.when_released = but_rele
