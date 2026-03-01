@@ -11,8 +11,6 @@ for i, pin in enumerate(pins):
 	but = Button(pin)
 	led = LED(pins_led[i])
 
-	led.blink()
-
 	def make_pressed(led_ref, n):
 		def pressed(b):
 			print(f"button {n} pressed")
@@ -34,4 +32,5 @@ for i, pin in enumerate(pins):
 try:
 	pause()
 except KeyboardInterrupt:
+	print("\n")
 	sys.exit(0)
