@@ -12,7 +12,6 @@ for i, pin in enumerate(pins):
 	but = Button(pin)
 	led = LED(pins_led[i])
 
-	
 	def make_pressed(led_ref, name):
 		def pressed(led_ref, name):
 			print(f"button {name} pressed")
