@@ -1,10 +1,10 @@
 from gpiozero import Button
 from signal import pause
 
-button1 = Button(4)
-button2 = Button(5)
-button3 = Button(2)
-button4 = Button(3)
+button1 = Button(22)
+button2 = Button(27)
+button3 = Button(23)
+button4 = Button(24)
 
 def but_pres():
 	print(f"Button was pressed")
